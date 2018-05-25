@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # show OS and firmware versions
-echo -e "\n OS & Firmware versions:\n"
+echo -e "pidesktop V1.1.6\n\\n OS & Firmware versions:\n"
 dmesg --notime  | grep firmware
 uname -s -r -v -o
 
 # show scripts and python files
-echo -e "pidesktop\n\n Script files:\n"
+echo -e "\n Script files:\n"
 ls -laR /usr/share/pidesktop/*
 
 # show links to pd- commands
